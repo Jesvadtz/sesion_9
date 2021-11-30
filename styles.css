@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+}
+body {
+  padding: 1rem;
+}
+#firstSection {
+  background-color: pink;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#secondSection {
+  background-color: violet;
+  height: 300px;
+  width: 100%;
+}
+#thirdSection {
+  background-color: purple;
+  color: white;
+}
+
+#thirdSection > p {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #container {
+    flex-direction: row;
+  }
+  #secondSection {
+    display: inline-block;
+    width: 50%;
+  }
+  #thirdSection {
+    width: 50%;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #container {
+    flex-direction: row;
+  }
+  #secondSection {
+    display: inline-block;
+    width: 30%;
+  }
+  #thirdSection {
+    width: 70%;
+    height: 300px;
+  }
+}
